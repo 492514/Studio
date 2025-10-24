@@ -18,7 +18,7 @@ main{
     flex-direction: column;
      background-color: black;
 }
-.view1{
+section{
     max-width: 2000px;
 }
 .view1 {
@@ -80,8 +80,7 @@ main{
     /* width: 100%; */
     padding: 0.1rem;
     display: flex;
-  
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 0.5rem;
     /* background-color: rgb(82, 82, 82); */
 }
@@ -147,8 +146,54 @@ main{
 }
 
 
-@media (min-width:900px){
+.view3 {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.top{
+    width: 100%;
+   
+}
+.top img{
+    width: 100%;
+    border-radius:0.5rem;
+    
+}
+.bottom{
 
+    gap: 3rem;
+     padding: 2rem;
+     display: flex;
+     flex-direction: column;
+    border-radius: 0.7rem;
+    background-color: rgb(26, 26, 26);
+}
+.bottom h4{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.view3 .bottom .text{
+    gap: 1rem;
+    
+}
+.view3 .bottom .text h2{
+    font-weight: 400;
+}
+
+.view3 .bottom .text .paragraph p{
+    opacity: 0.7;
+    gap: 0.5rem;
+    font-size: large;
+    font-weight: 200;
+    line-height: 2rem;
+}
+
+
+@media (min-width:900px){
+/* this is for view 1 */
     .view1{
         flex-direction: row;
     }
@@ -156,14 +201,14 @@ main{
         text-transform: uppercase;
         font-size: 2rem;
     }
-    .top,.bottom{
+    .view1 .top,.bottom{
         width: 50%;
     }
-    .bottom{
+    .view1 .bottom{
        padding: 1rem;
        justify-content: space-between;
     }
-    .text h2{
+    .view1 .text h2{
         font-size: 3.5rem;
            font-weight: 100;
  
@@ -172,21 +217,45 @@ main{
         width: 60%;
     font-size: 1rem;
     }
+    /* this is for view2 */
     .view2{
         padding: 2rem;
-        justify-content: space-evenly;
+       
     }
   .left{
     gap: 10rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
      flex-direction: row;
   }
     .right{
     gap: 10rem;
-      justify-content: space-between;
+      justify-content: space-evenly;
      align-items: center;
      flex-direction: row;
+  }
+  /* this is for view 3 */
+  .view3{
+    flex-direction: row-reverse;
+  }
+  .view3 .top,.bottom{
+    width: 50%;
+  }
+  .view3 .bottom{
+    padding: 3rem; 
+       justify-content: space-between;
+  }
+   .view3 .text h2{
+        font-size: 3rem;
+           font-weight: 100;
+ 
+    }
+  .view3 .bottom .text .paragraph{
+    display: flex;
+    font-size: large;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
   }
    
 }
