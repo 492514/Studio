@@ -237,7 +237,108 @@ section{
     font-weight: 200;
     line-height: 2rem;
 }
+/* this is view 5 */
+.view5{
+    width: 100%;
+    padding: 1.5rem;
+}
+.view5 P{
+    font-size: 2.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+/* this is for view5 */
+.view6{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+.view6 .container1{
+    width: 100%;
+    height: 27.5rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-image: url("./web5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
+}
+.view6 .container2{
+       width: 100%;
+    height: 27.5rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-image: url("./web6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.view6 .container3{
+        width: 100%;
+    height: 27.5rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-image: url("./web7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.view6 .t{
+    width: 60%;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+     margin-left: 11rem;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5rem;
+    background:transparent;
+}
+.view6  .circle{
+    height: 3rem;
+    width: 3rem;
+    background:transparent;
+    overflow: hidden;
+     display: flex;
+    align-items: center;
+       backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.1px solid rgb(90, 89, 89);
+    border-radius: 50%;
+      transform: scale(1);
+  transition: all 0.3s ease;
+}
+.view6 .circle:hover{
+    cursor: pointer;
+    border: 0.1px solid rgb(215, 215, 215);
+}
+.view6 .circle img{
+    width: 100%;
+    height: 50%;
+   
+    object-fit: contain;
+}
+.view6 .b{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    color: rgb(247, 247, 247);
+    margin-top: 15rem;
+    display: flex;
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(1px);
+    align-items: center;
+    justify-content: space-between;
+    background:transparent;
+}
+.view6 #name{
+    font-size: x-large;
+    text-transform: uppercase;
+}
 @media (min-width:900px){
 /* this is for view 1 */
     .view1{
@@ -326,6 +427,14 @@ section{
     gap: 1.5rem;
     flex-direction: row;
   }
+  /* this is for view6 */
+     .view6{
+        display: flex;
+        flex-direction: row;
+    }
+    .container1,.container2,.container3{
+        width: 33.3%;
+    }
 }
 
 @media (min-width:3840px){
