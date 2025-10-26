@@ -385,6 +385,157 @@ section{
     margin-top: 5rem;
 }
 
+/* this is for view 8 */
+
+.view8{
+    width: 100%;
+    color: black;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.view8 .container{
+     width: 100%;
+     padding: 1rem;
+     background-color: rgb(196, 167, 95);
+     border-radius: 0.5rem;
+}
+.view8 .conta{
+    font-weight: 500;
+     opacity: 0.7;
+}
+.view8 .container .flex{
+    display: flex;
+    flex-direction: column;
+}
+.view8 .shine{
+    width: 90%;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.view8 button{
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 0.7rem;
+    text-transform: uppercase;
+    font-size: larger;
+    color: whitesmoke;
+    border: none;
+    background-color: black;
+    padding: 1rem;
+}
+
+/* this is for view9 */
+.view9{
+    width: 100%;
+    padding: 0.7rem;
+}
+.view9 .important{
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+}
+.view9 .important .container1{
+    display: flex;
+    padding: 1.5rem;
+     border-radius: 0.5rem;
+    flex-direction: column;
+     background-color: rgb(26, 26, 26);
+}
+.view9 .important .container1 .alvy{
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: x-large;
+}
+
+.view9 .important .container1 .t{
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5rem;
+    margin-top: 5rem;
+    background:transparent;
+}
+.view9 .important .container1 .circle{
+    height: 3rem;
+    width: 3rem;
+    background:transparent;
+    overflow: hidden;
+     display: flex;
+    align-items: center;
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.1px solid rgb(255, 221, 221);
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.view9 .circle:hover{
+    cursor: pointer;
+    border: 0.1px solid rgb(215, 215, 215);
+}
+
+.view9 .circle img{
+    width: 100%;
+    height: 50%;
+   
+    object-fit: contain;
+}
+.view9 .important .flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.view9 .important .container2{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+     background-color: rgb(26, 26, 26);
+  
+}
+.view9 .important .container2 .box{
+    line-height: 2.8rem;
+    font-size: large;
+   
+    padding: 0.5rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.view9 .important .container3{
+  width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+     background-color: rgb(26, 26, 26);
+}
+
+.view9 .important .container3 button{
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    color: whitesmoke;
+    background:transparent ;
+    width: 20%;
+}
+
+
+.view9 .important .container3 .made{
+    text-transform: uppercase;
+    width: 90%;
+    font-size: larger;
+}
+
+
 
 @media (min-width:900px){
 /* this is for view 1 */
@@ -501,6 +652,49 @@ section{
     .view7 .bottom button{
         margin-top: 7rem;
     }
+    /* this is for view 8 */
+
+    .view8 .container{
+    padding:2.8rem;
+}
+.view8 .container .flex{
+    
+    flex-direction: row;
+}
+.view8 .container .flex .shine{
+    width: 70%;
+    font-size: 5rem;
+}
+.view8 .container .flex button{
+    width: 17%;
+    margin-left: 10rem;
+    margin-top: 8rem;
+    height: 50%;
+}
+
+/* this is for view9 */
+
+.view9 .important{
+    flex-direction: row;
+}
+.view9 .important .container1 ,.container2{
+    width: 50%;
+}
+
+.view9 .important .container1 .t{
+    gap: 1rem;
+    width: 40%;
+}
+
+.view9 .important .container1{
+    justify-content: space-between;
+}
+
+.view9 .important .container2{
+    flex-direction: row;
+    gap: 8rem;
+}
+
 }
 
 @media (min-width:3840px){
